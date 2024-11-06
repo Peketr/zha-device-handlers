@@ -32,14 +32,13 @@ from zhaquirks.tuya import (
     TuyaCommand,
     TuyaTimePayload,
     EnchantedDevice,
-    TuyaEnchantableCluster,
     TuyaLocalCluster,
     TuyaPowerConfigurationCluster2AAA,
 )
 from zhaquirks.tuya.mcu import DPToAttributeMapping, TuyaMCUCluster
 
 
-class TuyaTemperatureMeasurement(TuyaEnchantableCluster, TemperatureMeasurement, TuyaLocalCluster):
+class TuyaTemperatureMeasurement(TemperatureMeasurement, TuyaLocalCluster):
     """Tuya local TemperatureMeasurement cluster."""
 
 
